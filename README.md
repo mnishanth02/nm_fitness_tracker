@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Functionalities Included in this Project
+1. Angular 9.1
+2. Angular Material
+3. Angular Routing
+4. FlexBox - @angular/flex-Layout
+5. SideNav, Toolbar, Responsive Page Layout
+6. RxJs
+7. Authentication | Firebase
+8. Route Protection
+9. Data Tables (Angular) | Filtering
+10. Auth Guard
+11. Lazy loading (Training Component)
+12. NgRx for State Management
+13. Multiple Reducers & Action | State
+14. lazy Load State
+15. Deploying app to Firebase Hosting
+16. 

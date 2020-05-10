@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div fxHide.gt-xs>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="onToggleSideNav()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </div>
+
+    <span>NM Fitness</span>
+    <!-- <span class="spacer"></span> -->
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+      <a class="icon" *ngIf="isAuth$ | async" [routerLink]="['/dashboard']" routerLinkActive="active" mat-button>
+        Dashboard
+      </a>
+      <a class="icon" *ngIf="!(isAuth$ | async)" [routerLink]="['/signup']" routerLinkActive="active" mat-button>
+        Signup
+      </a>
+      <a class="icon" *ngIf="!(isAuth$ | async)" [routerLink]="['/login']" routerLinkActive="active" mat-button>
+        Login
+      </a>
+      <a class="icon" *ngIf="isAuth$ | async" [routerLink]="['/training']" routerLinkActive="active" mat-button>
+        Training
+      </a>
+
+      <a class="icon" style="cursor: pointer;" *ngIf="isAuth$ | async" (click)="onLogout()" mat-button>
+        Logout
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

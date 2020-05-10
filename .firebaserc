@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "nm-fitness-tracker": {
+      "hosting": {
+        "fitness-tracker": [
+          "nm-fitness-tracker"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "nm-fitness-tracker"
+  }
+}
